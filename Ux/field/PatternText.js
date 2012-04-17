@@ -7,12 +7,12 @@ Ext.define('Ux.field.PatternText', {
          * The value to set as the pattern attribute to the <input> element
          * @cfg {String} pattern
          */
-        pattern    : '[0-9]*',
+        pattern    : null,
         /**
          * The RegExp string to validate keys
          * @cfg {String/RegExp} regexp
          */
-        regexp     : '[0-9]',
+        regexp     : null,
         /**
          * An array of key codes that are allowed
          * @cfg {Array} allowCodes
