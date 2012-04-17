@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Ux.field.PatternText</title>
+
+    <meta content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <link rel='stylesheet' type='text/css' href='../sencha-touch-2.0.1-rc/resources/css/sencha-touch.css' />
+    <script type='text/javascript' src='../sencha-touch-2.0.1-rc/sencha-touch-debug.js'></script>
+
+    <script type='text/javascript'>
+        Ext.Loader.setPath('Ux', 'Ux');
+
+        Ext.application({
+            name : 'Test',
+
+            requires : [
+                'Ext.Container',
+                'Ux.field.PatternText'
+            ],
+
+            launch : function() {
+
+                new Ext.Container({
+                    fullscreen : true,
+                    items      : [
+                        {
+                            xtype : 'patterntextfield',
+                            label : 'Test'
+                        }
+                    ]
+                });
+
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+</body>
+
+</html>
